@@ -1,11 +1,43 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Progate</title>
-  </head>
-  <body>
-    <h1 class="title">HTML & CSS の開発環境を用意しよう！</h1>
-    <p>自分のPCでwebページを開発する方法を学習しましょう</p>
-  </body>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- デザイン用CSSの読み込み -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Webアイコン（remicon）を使用するための設定 -->
+    <link href="[https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css](https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css)" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <!-- ① サイドバーエリア -->
+        <aside class="sidebar">
+            <!-- ユーザープロフィール部分 -->
+            <div class="user-profile">
+                <!-- プロフィール画像 -->
+                <img src="images/avatar.png" alt="User Avatar" class="avatar" />
+                <p class="user-name">Progate User</p>
+            </div>
+            <!-- ナビゲーションメニュー部分 -->
+            <nav class="nav-menu">
+                <ul>
+                    <li class="active">ホーム</li>
+                    <li>プロフィール</li>
+                    <li>設定</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- ② メインコンテンツエリア -->
+        <main class="main-content">
+            <!-- ヘッダーエリア -->
+            <header>
+                <h1>Dashboard</h1>
+            </header>
+            <p>This dashboard is a tool to enrich your daily life. You can easily use essential features such as diary entries, memo management, and checking weather information.</p>
+            <p>Small daily records become irreplaceable memories, and efficient task management leads to fulfilling days. Please use this as a partner that supports your everyday life.</p>
+        </main>
+    </div>
+</body>
 </html>

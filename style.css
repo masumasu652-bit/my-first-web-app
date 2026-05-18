@@ -1,0 +1,80 @@
+/* 余計な余白をリセットする設定 */
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* 全体を横並びにして、高さを画面いっぱいに（100vh）する設定 */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* ① サイドバーのデザイン */
+.sidebar {
+    width: 250px;
+    background-color: #1e293b; /* 落ち着いたダークネイビー */
+    color: #ffffff;            /* 文字色を白に */
+    display: flex;
+    flex-direction: column;    /* 中身の要素を縦並びにする */
+    padding: 20px;
+    box-sizing: border-box;    /* パディングを含めたサイズ計算にする */
+}
+
+/* ユーザープロフィール全体の配置 */
+.user-profile {
+    text-align: center;       /* 中身を中央揃えにする */
+    margin-bottom: 30px;      /* メニューとの間に隙間を空ける */
+}
+
+/* プロフィール画像（丸くする魔法） */
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;       /* これを指定すると画像が完璧な丸になります！ */
+    margin-bottom: 10px;      /* 名前との隙間 */
+}
+
+/* ユーザー名 */
+.user-name {
+    font-weight: bold;
+    margin: 0;
+}
+
+/* ナビゲーションメニューのリスト設定 */
+.nav-menu ul {
+    list-style: none;         /* リストの先頭の「・」を消す */
+    padding: 0;
+    margin: 0;
+}
+
+/* メニューの各項目 */
+.nav-menu li {
+    padding: 12px 15px;
+    border-radius: 8px;       /* 角を少し丸くして柔らかい印象に */
+    margin-bottom: 8px;
+    cursor: pointer;          /* マウスを乗せた時に指マークにする */
+}
+
+/* 現在選ばれている項目（activeクラス）や、マウスを乗せたときのデザイン */
+.nav-menu li.active, .nav-menu li:hover {
+    background-color: #334155; /* 背景を少し明るいグレーにして目立たせる */
+}
+
+/* ② メインコンテンツのデザイン */
+.main-content {
+    flex: 1;                  /* 残りの右側スペースをすべて埋める */
+    padding: 40px;
+    background-color: #f8fafc; /* すっきりとした薄いグレー */
+}
+
+header {
+    border-bottom: 2px solid #e2e8f0; /* 見出しの下に境界線を引く */
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+}
+
+header h1 {
+    margin: 0;
+    color: #0f172a;
+}
